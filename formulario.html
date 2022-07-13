@@ -1,0 +1,206 @@
+<html>   
+
+<head>   
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Formulario de captación</title>   
+	<link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+	<script src="checkbox.js"></script>
+</head>   
+
+<body>   
+
+<form method="POST" action="registrar.php" class="my-form">   
+  <div class="container">
+    <h1>Formulario de captación</h1>
+    <ul>
+	<div class="grid grid-2">
+      <li>NIF: <input type="text" name="nif" size="20" required></li>    
+      <li>Nombre y apellidos: <input type="text" name="nombre" size="50"></li>    
+	</div>
+	<li>Tipo de vivienda
+		<select name="tipo">
+			<option value="Piso" selected>Piso</option>
+			<option value="Casa">Casa</option>
+			<option value="Bungalow">Bungalow</option>
+			<option value="Estudio">Estudio</option>
+			<option value="Chalet">Chalet</option>
+			<option value="Villa">Villa</option>
+		</select>
+	</li>        
+	
+	<div class="grid grid-2">
+		<li>Provincia: <input type="text" name="provincia" size="20" required></li>    
+		<li>Población: <input type="text" name="poblacion" size="20" required></li>
+	</div>
+	<div class="grid grid-2">
+	  <li>Código Postal: <input type="text" name="cod_postal" size="20"></li>
+	  <li>Año de construcción: <input type="text" name="anyo" size="4"></li>
+	</div>
+	<div class="grid grid-2">	
+	  <li>Número de habitaciones: <input type="text" name="num_hab" size="2" required></li>
+	  <li>Número de baños: <input type="text" name="num_ban" size="2" required></li>
+	</div>
+	<div class="grid grid-2">	
+	  <li>Metros construidos: <input type="text" name="m_construidos" size="5"></li>
+	  <li>Metros útiles: <input type="text" name="m_utiles" size="5"></li>
+	</div>
+	  <li>Otras características</li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="adaptado" value="adaptado">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Adaptado a personas con movilidad reducida</span>
+	</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="ascensor" value="ascensor">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Ascensor</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="garaje" value="garaje">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Garaje</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="trastero" value="trastero">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Trastero</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="aire" value="aire">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Aire acondicionado</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="jardin" value="jardin">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Jardín</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="piscina_priv" value="piscina_priv">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Piscina privada</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="piscina_com" value="piscina_com">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Piscina comunitaria</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="amueblado" value="amueblado">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Amueblado</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="parking" value="parking">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Parking</span>
+		</label>
+	  </li>
+	  <li>	
+		<label class="custom-radio-checkbox">
+		<!-- Input oculto -->
+		<input class="custom-radio-checkbox__input" type="checkbox" name="armarios_emp" value="armarios_emp">
+		<!-- Imagen en sustitucion -->
+		<span class="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+		<!-- Texto -->
+		<span class="custom-radio-checkbox__text">Armarios empotrados</span>
+		</label>
+	  </li>
+	<!--
+
+		<li><input type="checkbox" name="adaptado" value="adaptado" id="terms"><label for="terms"> Adaptado a personas con movilidad reducida</label></li>
+		<li><input type="checkbox" name="ascensor" value="ascensor" id="terms"><label for="terms"> Ascensor</label></li>
+		<li><input type="checkbox" name="garaje" value="garaje" id="terms"><label for="terms"> Garaje</label></li>
+		<li><input type="checkbox" name="trastero" value="trastero" id="terms"><label for="terms"> Trastero</label></li>
+		<li><input type="checkbox" name="aire" value="aire" id="terms"><label for="terms"> Aire acondicionado</label></li>
+		<li><input type="checkbox" name="jardin" value="jardin" id="terms"><label for="terms"> Jardín</label></li>
+		<li><input type="checkbox" name="piscina_priv" value="piscina_priv" id="terms"><label for="terms"> Piscina privada</label></li>
+		<li><input type="checkbox" name="piscina_com" value="piscina_com" id="terms"><label for="terms"> Piscina comunitaria</label></li>
+		<li><input type="checkbox" name="amueblado" value="amueblado" id="terms"><label for="terms"> Amueblado</label></li>
+		<li><input type="checkbox" name="parking" value="parking" id="terms"><label for="terms"> Parking</label></li>
+		<li><input type="checkbox" name="armarios_emp" value="armarios_emp" id="terms"><label for="terms"> Armarios empotrados</label></li>-->
+	<div class="grid grid-2">	
+	  <li>Gastos de comunidad: <input type="text" name="comunidad" size="5"></li>    		
+	  <li>IBI: <input type="text" name="ibi" size="5"></li>   
+	</div>
+	<div class="grid grid-2">	  
+	  <li>Precio propietario: <input type="text" name="precio" size="7" required></li>    
+	  <li>Precio venta público: <input type="text" name="pvp" size="7" required></li>  
+	</div>
+	
+	  <li>Observaciones:<textarea name="observaciones" rows="5" cols="40"> </textarea></li>   
+      <li><input type="submit" value="Guardar datos" name="B1"></li>   
+     <!-- <li>
+		<div class="grid grid-3">
+		  <div class="required-msg">CAMPOS OBLIGATORIOS</div>
+		  <button class="btn-grid" type="submit" disabled value="Guardar datos" name="B1">
+			<span class="back">
+			  <img src="IMG_SRC" alt="">
+			</span>
+			<span class="front">ENVIAR</span>
+		  </button>
+		  <button class="btn-grid" type="reset" disabled>
+			<span class="back">
+			  <img src="IMG_SRC" alt="">
+			</span>
+			<span class="front">RESET</span>
+		  </button> 
+		</div>
+	   </li>-->
+    </ul>
+  </div>
+</form>    
+       
+
+</body>   
+
+</html>
